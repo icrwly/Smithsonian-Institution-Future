@@ -1,0 +1,19 @@
+uuid: 719e6611-3de1-4e8c-9d5d-69ddf7cf2bbf
+langcode: en
+status: true
+dependencies: {  }
+id: dev
+label: Dev
+description: 'Active on Pantheon dev and multidev environments.'
+weight: 1
+folder: ../config/envs/dev
+module:
+  dblog: 0
+  views_ui: 0
+theme: {  }
+blacklist:
+  - dblog.settings
+  - system.logging
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

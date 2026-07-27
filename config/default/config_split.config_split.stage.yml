@@ -1,0 +1,24 @@
+uuid: 40ca265d-fda3-4e3d-832c-9865c0540e4a
+langcode: en
+status: true
+dependencies: {  }
+id: stage
+label: Stage
+description: 'Active on the Pantheon test (stage) environment.'
+weight: 1
+folder: ../config/envs/stage
+module:
+  dblog: 0
+  devel: 0
+  devel_kint_extras: 0
+  ray_debugger: 0
+  upgrade_status: 0
+  views_ui: 0
+theme: {  }
+blacklist:
+  - dblog.settings
+  - devel.settings
+  - system.logging
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

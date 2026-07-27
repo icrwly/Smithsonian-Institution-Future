@@ -1,0 +1,19 @@
+uuid: c26bf5e6-a1ce-40e9-9569-58d12a367f17
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: Local
+description: 'Active on local development environments (Lando). Enables developer-friendly settings.'
+weight: 1
+folder: ../config/envs/local
+module:
+  dblog: 0
+  views_ui: 0
+theme: {  }
+blacklist:
+  - dblog.settings
+  - system.logging
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

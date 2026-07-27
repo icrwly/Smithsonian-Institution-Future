@@ -1,0 +1,25 @@
+uuid: 4bf73a3d-3a21-4c9b-b8e4-c2e38bb1d289
+langcode: en
+status: true
+dependencies: {  }
+id: prod
+label: Prod
+description: 'Active on the Pantheon live environment. Disables dev-only modules and verbose logging.'
+weight: 1
+folder: ../config/envs/prod
+module:
+  dblog: 0
+  devel: 0
+  devel_entity_updates: 0
+  devel_kint_extras: 0
+  ray_debugger: 0
+  upgrade_status: 0
+  views_ui: 0
+theme: {  }
+blacklist:
+  - dblog.settings
+  - devel.settings
+  - system.logging
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
